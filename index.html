@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" data-i18n-attr="content:meta_description"
+    content="Consultoría empresarial premium — Estrategia financiera basada en datos, eficiencia operativa y soluciones de crecimiento para empresas de alto rendimiento.">
+  <meta name="keywords"
+    content="business consulting, financial analysis, operational efficiency, cost optimization, growth strategy, consultoría empresarial, análisis financiero">
+  <meta name="author" content="Kevin Consulting">
+  <title data-i18n="meta_title">Kevin Consulting — Asesoría Estratégica Empresarial y Financiera</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/images/logo2.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="navbar-logo">
+        <img src="assets/images/logo2.png" alt="Kevin Consulting Logo">
+        <span>Kevin<span class="logo-dot"> Rivera</span></span>
+      </a>
+
+      <div class="navbar-menu" id="navbarMenu">
+        <a href="#hero" data-i18n="nav_home">Inicio</a>
+        <a href="#services" data-i18n="nav_services">Servicios</a>
+        <a href="#case-studies" data-i18n="nav_case_studies">Casos de Éxito</a>
+        <a href="#methodology" data-i18n="nav_methodology">Metodología</a>
+        <a href="#about" data-i18n="nav_about">Sobre Mí</a>
+        <a href="#contact" data-i18n="nav_contact">Contacto</a>
+      </div>
+
+      <!-- ── Language Toggle ── -->
+      <div class="lang-toggle" id="langToggle" role="switch" aria-label="Toggle language between Spanish and English"
+        tabindex="0">
+        <span class="lang-toggle-label lang-label-es active">ES</span>
+        <div class="lang-toggle-track">
+          <div class="lang-toggle-thumb"></div>
+        </div>
+        <span class="lang-toggle-label lang-label-en">EN</span>
+      </div>
+
+      <div class="navbar-cta">
+        <a href="#contact" class="btn btn-gold" data-i18n="nav_cta">Solicitar Consulta</a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" data-i18n="nav_home">Inicio</a>
+    <a href="#services" data-i18n="nav_services">Servicios</a>
+    <a href="#case-studies" data-i18n="nav_case_studies">Casos de Éxito</a>
+    <a href="#methodology" data-i18n="nav_methodology">Metodología</a>
+    <a href="#about" data-i18n="nav_about">Sobre Mí</a>
+    <a href="#contact" data-i18n="nav_contact">Contacto</a>
+    <a href="#contact" class="btn btn-gold" style="margin-top: 16px;" data-i18n="nav_cta">Solicitar Consulta</a>
+  </div>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="hero">
+    <img src="assets/images/hero-bg.png" alt="" class="hero-bg-image" aria-hidden="true">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+          </svg>
+          <span data-i18n="hero_badge">Consultoría Orientada a Resultados</span>
+        </div>
+
+        <h1 class="hero-title" data-i18n="hero_title">
+          Estás <span class="highlight">Perdiendo Dinero</span> y no lo sabes
+        </h1>
+
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
+          Identificamos fugas financieras ocultas, optimizamos tus operaciones y construimos estrategias basadas en
+          datos que entregan resultados medibles.
+        </p>
+
+        <div class="hero-pain-points">
+          <div class="pain-point">
+            <div class="pain-point-icon">
+              <svg viewBox="0 0 24 24">
+                <line x1="12" y1="1" x2="12" y2="23" />
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+              </svg>
+            </div>
+            <span data-i18n="hero_pain_1">Falta de claridad financiera y visibilidad del flujo de caja</span>
+          </div>
+          <div class="pain-point">
+            <div class="pain-point-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <span data-i18n="hero_pain_2">Operaciones ineficientes que drenan tus recursos</span>
+          </div>
+          <div class="pain-point">
+            <div class="pain-point-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                <line x1="12" y1="9" x2="12" y2="13" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+            </div>
+            <span data-i18n="hero_pain_3">Mala toma de decisiones que te cuesta oportunidades de crecimiento</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn btn-gold" data-i18n="hero_cta_primary">
+            Solicitar una Consulta
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+          <a href="#services" class="btn btn-outline" data-i18n="hero_cta_secondary">Explorar Servicios</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-portrait-wrapper">
+          <div class="hero-portrait-glow"></div>
+          <img src="assets/images/consultant.png" alt="Kevin — Business Consultant" class="hero-portrait">
+          <div class="hero-stat-badge">
+            <div class="stat-number">150+</div>
+            <div class="stat-text" data-i18n="hero_stat_1_text">Negocios<br>Transformados</div>
+          </div>
+          <div class="hero-stat-badge">
+            <div class="stat-number">$12M</div>
+            <div class="stat-text" data-i18n="hero_stat_2_text">Ingresos<br>Generados</div>
+          </div>
+          <div class="texto-imagen">
+                <p>Contador Público y especialista en gerencia de proyectos.
+                  No solo analizo números: identifico dónde estás perdiendo dinero y, junto con soluciones tecnológicas, 
+                  convierto tu negocio en un sistema rentable y controlado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES SECTION ==================== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-header reveal">
+        <div class="section-label" data-i18n="services_label">Lo Que Ofrecemos</div>
+        <h2 class="section-title" data-i18n="services_title">Soluciones Estratégicas para un <span class="gold">Impacto
+            Máximo</span></h2>
+        <p class="section-subtitle" data-i18n="services_subtitle">Ofrecemos servicios de consultoría de precisión que
+          transforman la complejidad financiera en ventaja competitiva.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <line x1="12" y1="1" x2="12" y2="23" />
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </svg>
+          </div>
+          <h3 data-i18n="service_1_title">Análisis Financiero</h3>
+          <p data-i18n="service_1_desc">Diagnósticos financieros profundos que descubren ineficiencias ocultas y liberan
+            capital atrapado en tu negocio.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
+          </div>
+          <h3 data-i18n="service_2_title">Eficiencia Operativa</h3>
+          <p data-i18n="service_2_desc">Optimiza procesos, elimina desperdicios y construye sistemas escalables —
+            impulsando productividad y rentabilidad.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 20V10" />
+              <path d="M18 20V4" />
+              <path d="M6 20v-4" />
+            </svg>
+          </div>
+          <h3 data-i18n="service_3_title">Optimización de Costos</h3>
+          <p data-i18n="service_3_desc">Reducción estratégica de costos que protege la calidad y el crecimiento
+            eliminando gastos innecesarios en cada nivel.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card reveal reveal-delay-4">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+              <polyline points="17 6 23 6 23 12" />
+            </svg>
+          </div>
+          <h3 data-i18n="service_4_title">Estrategia de Crecimiento</h3>
+          <p data-i18n="service_4_desc">Hojas de ruta de crecimiento respaldadas por datos que identifican oportunidades
+            ganadoras y posicionan tu negocio para un escalamiento sostenible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== METHODOLOGY SECTION ==================== -->
+  <section class="methodology" id="methodology">
+    <div class="container">
+      <div class="methodology-header reveal">
+        <div class="section-label" data-i18n="methodology_label">Nuestro Proceso</div>
+        <h2 class="section-title" data-i18n="methodology_title">Un Marco Probado para <span class="gold">Resultados
+            Reales</span></h2>
+        <p class="section-subtitle" data-i18n="methodology_subtitle">Tres pasos de precisión que transforman el caos
+          financiero en un motor competitivo de crecimiento.</p>
+      </div>
+
+      <div class="methodology-steps">
+        <div class="step-card reveal reveal-delay-1">
+          <div class="step-number">01</div>
+          <h3 data-i18n="step_1_title">Identificar Fugas Financieras</h3>
+          <p data-i18n="step_1_desc">Realizamos una auditoría integral de tu ecosistema financiero para detectar dónde
+            se pierde, se asigna mal o se subutiliza el dinero.</p>
+        </div>
+
+        <div class="step-card reveal reveal-delay-2">
+          <div class="step-number">02</div>
+          <h3 data-i18n="step_2_title">Organizar la Estructura Financiera</h3>
+          <p data-i18n="step_2_desc">Reestructuramos tu arquitectura financiera — sistemas, procesos e informes — para
+            crear claridad, control y visibilidad en tiempo real.</p>
+        </div>
+
+        <div class="step-card reveal reveal-delay-3">
+          <div class="step-number">03</div>
+          <h3 data-i18n="step_3_title">Construir Estrategia Ganadora</h3>
+          <p data-i18n="step_3_desc">Diseñamos una hoja de ruta basada en datos adaptada a tus objetivos — maximizando
+            el ROI, acelerando el crecimiento y preparando tu negocio para el futuro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VALUE PROPOSITION ==================== -->
+  <section class="value-prop" id="value-prop">
+    <div class="container">
+      <div class="value-visual reveal">
+        <div class="value-circle value-circle-1">
+          <div class="value-circle-label" data-i18n="value_circle_1">Contabilidad<br>Estratégica</div>
+        </div>
+        <div class="value-circle value-circle-2">
+          <div class="value-circle-label" data-i18n="value_circle_2">Optimización<br>Financiera</div>
+        </div>
+        <div class="value-circle value-circle-3">
+          <div class="value-circle-label" data-i18n="value_circle_3">Gestión de<br>Proyectos</div>
+        </div>
+      </div>
+
+      <div class="value-content reveal">
+        <div class="section-label" data-i18n="value_label">Por Qué Elegirnos</div>
+        <h2 class="section-title" data-i18n="value_title">Donde la Estrategia se une a la <span
+            class="gold">Precisión</span></h2>
+        <p data-i18n="value_desc">Nuestro enfoque interdisciplinario combina profunda experiencia financiera,
+          inteligencia operativa y visión estratégica — creando una sinergia que entrega resultados exponenciales.</p>
+
+        <div class="value-features">
+          <div class="value-feature">
+            <div class="value-feature-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="value_feature_1_title">Resultados Medibles</h4>
+              <p data-i18n="value_feature_1_desc">Cada compromiso se construye sobre KPIs. Medimos lo que importa y
+                entregamos impacto cuantificable.</p>
+            </div>
+          </div>
+          <div class="value-feature">
+            <div class="value-feature-icon">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="value_feature_2_title">Confidencial y Seguro</h4>
+              <p data-i18n="value_feature_2_desc">Tu información financiera se maneja con el más alto nivel de
+                discreción y seguridad empresarial.</p>
+            </div>
+          </div>
+          <div class="value-feature">
+            <div class="value-feature-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M2 12h20" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="value_feature_3_title">Mejores Prácticas Globales</h4>
+              <p data-i18n="value_feature_3_desc">Estrategias informadas por estándares internacionales y metodologías
+                probadas de firmas de primer nivel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CASE STUDIES ==================== -->
+  <section class="case-studies" id="case-studies">
+    <div class="container">
+      <div class="case-studies-header reveal">
+        <div class="section-label" data-i18n="cases_label">Resultados Comprobados</div>
+        <h2 class="section-title" data-i18n="cases_title">Casos de Éxito que <span class="gold">Hablan en Números</span>
+        </h2>
+        <p class="section-subtitle" data-i18n="cases_subtitle">Transformaciones reales. Negocios reales. Resultados
+          medibles que demuestran que nuestra metodología funciona.</p>
+      </div>
+
+      <div class="case-grid">
+        <!-- Case Study 1 -->
+        <div class="case-card reveal reveal-delay-1">
+          <div class="case-card-image">
+            <div class="case-card-visual">TG</div>
+          </div>
+          <div class="case-card-body">
+            <div class="case-company">TechGrowth Inc.</div>
+            <h3 data-i18n="case_1_title">Programa de Reestructuración Financiera y Optimización de Costos</h3>
+            <div class="case-results">
+              <div class="case-metric">
+                <div class="metric-value">+34%</div>
+                <div class="metric-label" data-i18n="case_1_metric_1_label">Margen de Ganancia</div>
+              </div>
+              <div class="case-metric">
+                <div class="metric-value">-22%</div>
+                <div class="metric-label" data-i18n="case_1_metric_2_label">Costos Operativos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div class="case-card reveal reveal-delay-2">
+          <div class="case-card-image">
+            <div class="case-card-visual">NS</div>
+          </div>
+          <div class="case-card-body">
+            <div class="case-company">NovaStar Logistics</div>
+            <h3 data-i18n="case_2_title">Eficiencia Operativa y Reestructuración de Cadena de Suministro</h3>
+            <div class="case-results">
+              <div class="case-metric">
+                <div class="metric-value">+41%</div>
+                <div class="metric-label" data-i18n="case_2_metric_1_label">Eficiencia</div>
+              </div>
+              <div class="case-metric">
+                <div class="metric-value">-18%</div>
+                <div class="metric-label" data-i18n="case_2_metric_2_label">Costos de Desperdicio</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 3 -->
+        <div class="case-card reveal reveal-delay-3">
+          <div class="case-card-image">
+            <div class="case-card-visual">VP</div>
+          </div>
+          <div class="case-card-body">
+            <div class="case-company">VertexPrime Capital</div>
+            <h3 data-i18n="case_3_title">Estrategia de Crecimiento y Plan de Expansión de Mercado</h3>
+            <div class="case-results">
+              <div class="case-metric">
+                <div class="metric-value">$2.4M</div>
+                <div class="metric-label" data-i18n="case_3_metric_1_label">Ingresos Añadidos</div>
+              </div>
+              <div class="case-metric">
+                <div class="metric-value">3x</div>
+                <div class="metric-label" data-i18n="case_3_metric_2_label">ROI Entregado</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ME ==================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-image-wrapper reveal">
+        <div class="about-image-glow"></div>
+        <img src="assets/images/consultant.png" alt="Kevin — Business & Financial Consultant" class="about-image">
+      </div>
+
+      <div class="about-content reveal">
+        <div class="section-label" data-i18n="about_label">Sobre Mí</div>
+        <h2 class="section-title" data-i18n="about_title">Asesor de Confianza. <span class="gold">Experto
+            Comprobado.</span></h2>
+        <p data-i18n="about_bio_1">Con más de 10 años de experiencia en consultoría financiera, estrategia empresarial y
+          excelencia operativa, he ayudado a más de 150 empresas en diversas industrias a impulsar su crecimiento,
+          optimizar costos y lograr rentabilidad sostenible.</p>
+        <p data-i18n="about_bio_2">Mi enfoque es simple: análisis profundo, claridad estratégica y ejecución implacable.
+          Cada compromiso es personalizado, cada recomendación está respaldada por datos y cada resultado es medible.
+        </p>
+
+        <div class="about-credentials">
+          <div class="credential">
+            <svg viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+            <span data-i18n="credential_1">Analista Financiero Certificado</span>
+          </div>
+          <div class="credential">
+            <svg viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+            <span data-i18n="credential_2">Certificado PMP</span>
+          </div>
+          <div class="credential">
+            <svg viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+            <span data-i18n="credential_3">MBA — Gestión Estratégica</span>
+          </div>
+          <div class="credential">
+            <svg viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+            <span data-i18n="credential_4">150+ Empresas Atendidas</span>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-gold" data-i18n="about_cta">
+          Trabaja Conmigo
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TRUST / CREDENTIALS ==================== -->
+  <section class="trust" id="trust">
+    <div class="container">
+      <div class="trust-header reveal">
+        <div class="section-label" style="justify-content: center;" data-i18n="trust_label">Avalado Por</div>
+        <h2 class="section-title" style="font-size: 1.6rem;" data-i18n="trust_title">Certificaciones y Socios
+          Estratégicos</h2>
+      </div>
+
+      <div class="trust-logos reveal">
+        <div class="trust-logo">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+            <line x1="4" y1="22" x2="4" y2="15" />
+          </svg>
+          <span>CFA Institute</span>
+        </div>
+        <div class="trust-logo">
+          <svg viewBox="0 0 24 24">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+          </svg>
+          <span>PMI Global</span>
+        </div>
+        <div class="trust-logo">
+          <svg viewBox="0 0 24 24">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+          </svg>
+          <span>Harvard Business</span>
+        </div>
+        <div class="trust-logo">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M2 12h20" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          <span>ISO Certified</span>
+        </div>
+        <div class="trust-logo">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          <span>Deloitte Partner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FINAL CTA ==================== -->
+  <section class="final-cta" id="final-cta">
+    <div class="container reveal">
+      <div class="section-label" style="justify-content: center;" data-i18n="cta_label">¿Listo para Transformarte?</div>
+      <h2 class="section-title" data-i18n="cta_title">Lleva tu Negocio al <span class="gold">Siguiente Nivel</span></h2>
+      <p data-i18n="cta_desc">Deja de dejar dinero sobre la mesa. Construyamos una estrategia financiera que impulse un
+        crecimiento real y medible para tu negocio.</p>
+      <a href="#contact" class="btn btn-gold" data-i18n="cta_button">
+        Inicia Tu Transformación
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <polyline points="12 5 19 12 12 19" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-info reveal">
+        <div class="section-label" data-i18n="contact_label">Contáctanos</div>
+        <h2 class="section-title" data-i18n="contact_title">Construyamos Algo <span class="gold">Excepcional</span></h2>
+        <p data-i18n="contact_desc">¿Listo para transformar tu negocio? Comunícate por WhatsApp para una respuesta
+          inmediata o envíanos un mensaje detallado a través del formulario.</p>
+
+        <div class="contact-methods">
+          <a href="https://wa.me/1234567890?text=Hello%20Kevin,%20I'm%20interested%20in%20a%20consultation."
+            class="contact-method" target="_blank" rel="noopener">
+            <div class="contact-method-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.618-1.462A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="contact_whatsapp_title">WhatsApp</h4>
+              <span data-i18n="contact_whatsapp_desc">Obtén una respuesta inmediata — clic para chatear</span>
+            </div>
+          </a>
+
+          <div class="contact-method">
+            <div class="contact-method-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none"
+                  stroke="currentColor" stroke-width="2" />
+                <polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="contact_email_title">Correo Electrónico</h4>
+              <span>kevin@consulting.com</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/1234567890?text=Hello%20Kevin,%20I'm%20interested%20in%20a%20consultation."
+          class="whatsapp-btn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path
+              d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.618-1.462A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+          </svg>
+          <span data-i18n="contact_whatsapp_btn">Chatear por WhatsApp</span>
+        </a>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <h3 data-i18n="contact_form_title">Enviar un Mensaje</h3>
+        <div class="form-group">
+          <label for="contact-name" data-i18n="contact_form_name_label">Nombre Completo</label>
+          <input type="text" id="contact-name" name="name" data-i18n-attr="placeholder:contact_form_name_placeholder"
+            placeholder="Juan Pérez" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-email" data-i18n="contact_form_email_label">Correo Electrónico</label>
+          <input type="email" id="contact-email" name="email"
+            data-i18n-attr="placeholder:contact_form_email_placeholder" placeholder="juan@empresa.com" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-message" data-i18n="contact_form_message_label">Tu Mensaje</label>
+          <textarea id="contact-message" name="message" data-i18n-attr="placeholder:contact_form_message_placeholder"
+            placeholder="Cuéntanos sobre los desafíos de tu negocio..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold" data-i18n="contact_form_submit">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="navbar-logo">
+            <img src="assets/images/logo.png" alt="Kevin Consulting Logo">
+            <span>Kevin<span class="logo-dot">.</span></span>
+          </a>
+          <p data-i18n="footer_desc">Consultoría empresarial premium que ofrece estrategia basada en datos, optimización
+            financiera y excelencia operativa para empresas de alto rendimiento.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4 data-i18n="footer_nav_title">Navegación</h4>
+          <ul>
+            <li><a href="#services" data-i18n="footer_nav_services">Servicios</a></li>
+            <li><a href="#methodology" data-i18n="footer_nav_methodology">Metodología</a></li>
+            <li><a href="#case-studies" data-i18n="footer_nav_cases">Casos de Éxito</a></li>
+            <li><a href="#about" data-i18n="footer_nav_about">Sobre Mí</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4 data-i18n="footer_services_title">Servicios</h4>
+          <ul>
+            <li><a href="#services" data-i18n="footer_service_1">Análisis Financiero</a></li>
+            <li><a href="#services" data-i18n="footer_service_2">Eficiencia Operativa</a></li>
+            <li><a href="#services" data-i18n="footer_service_3">Optimización de Costos</a></li>
+            <li><a href="#services" data-i18n="footer_service_4">Estrategia de Crecimiento</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4 data-i18n="footer_contact_title">Contacto</h4>
+          <ul>
+            <li><a href="mailto:kevin@consulting.com">kevin@consulting.com</a></li>
+            <li><a href="https://wa.me/1234567890" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="#contact" data-i18n="footer_get_consultation">Solicitar Consulta</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer_copyright">© 2026 Kevin Consulting. Todos los derechos reservados.</span>
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/1234567890?text=Hello%20Kevin,%20I'm%20interested%20in%20a%20consultation."
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+      <path
+        d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.618-1.462A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+    </svg>
+  </a>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
