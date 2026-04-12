@@ -56,6 +56,11 @@ const translations = {
     en: 'Results-Driven Consulting',
     es: 'Consultoría Orientada a Resultados'
   },
+
+  hero_tagline:{
+  en: 'puto',
+  es: 'Contador Público y especialista en gerencia de proyectos'
+ },
   hero_title: {
     en: 'Are You <span class="highlight">Losing Money</span> in Your Business?',
     es: 'Estás <span class="highlight">Perdiendo Dinero</span> y no lo sabes.'
