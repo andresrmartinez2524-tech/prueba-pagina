@@ -328,6 +328,12 @@ ol {
   color: var(--white-soft);
   letter-spacing: 0.5px;
 }
+@media (max-width: 768px) {
+  .navbar-logo span {
+    font-size: 14px;
+    max-width: 100%;
+  }
+}
 
 .navbar-logo .logo-dot {
   background: var(--gold);
