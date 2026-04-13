@@ -330,7 +330,7 @@ ol {
 }
 @media (max-width: 768px) {
   .navbar-logo span {
-    font-size: 14px;
+    font-size: 15px;
     max-width: 100%;
   }
 }
