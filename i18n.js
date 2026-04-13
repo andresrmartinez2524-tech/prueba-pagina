@@ -57,13 +57,13 @@ const translations = {
     es: 'Consultoría Orientada a Resultados'
   },
 
-  hero_tagline:{
-  en: 'puto',
-  es: 'Contador Público y especialista en gerencia de proyectos'
- },
+  hero_tagline: {
+    en: 'Public Accountant and Project Management Specialist',
+    es: 'Contador Público y especialista en gerencia de proyectos'
+  },
   hero_title: {
-    en: 'Are You <span class="highlight">Losing Money</span> in Your Business?',
-    es: 'Estás <span class="highlight">Perdiendo Dinero</span> y no lo sabes.'
+    en: 'You are <span class="highlight">Losing Money</span> without even knowing it',
+    es: 'Estás <span class="highlight">Perdiendo Dinero</span> y no lo sabes'
   },
   hero_subtitle: {
     en: 'We identify hidden financial leaks, optimize your operations, and build data-driven strategies that deliver measurable, bottom-line results.',
@@ -82,7 +82,7 @@ const translations = {
     es: 'Mala toma de decisiones que te cuesta oportunidades de crecimiento'
   },
   hero_cta_primary: {
-    en: 'Request a Consultation',
+    en: 'DIAGNOSE MY BUSINESS NOW',
     es: 'DIAGNOSTICAR MI NEGOCIO AHORA'
   },
   hero_cta_secondary: {
@@ -190,16 +190,16 @@ const translations = {
      VALUE PROPOSITION SECTION
      ───────────────────────────────────────── */
   value_circle_1: {
-    en: 'Strategic<br>Accounting',
-    es: 'Contabilidad<br>Estratégica'
+    en: 'Strategic Accounting',
+    es: 'Contabilidad Estratégica'
   },
   value_circle_2: {
-    en: 'Financial<br>Optimization',
-    es: 'Optimización<br>Financiera'
+    en: 'Financial Optimization',
+    es: 'Optimización Financiera'
   },
   value_circle_3: {
-    en: 'High-Value<br>Project Mgmt',
-    es: 'Gestión de<br>Proyectos'
+    en: 'Project Management',
+    es: 'Gestión de Proyectos'
   },
   value_label: {
     en: 'Why Choose Us',
@@ -298,12 +298,12 @@ const translations = {
     es: 'Sobre Mí'
   },
   about_title: {
-    en: 'Trusted Advisor. <span class="gold">Proven Expert.</span>',
-    es: 'Asesor de Confianza. <span class="gold">Experto Comprobado.</span>'
+    en: 'Multiply your Outcomes with <span class="gold">Proven Strategy.</span>',
+    es: 'Multiplica tus Resultados con <span class="gold">Estrategia Probada.</span>'
   },
   about_bio_1: {
-    en: 'With over 10 years of experience in financial consulting, business strategy, and operational excellence, I\'ve helped 150+ companies across diverse industries unlock growth, optimize costs, and achieve sustainable profitability.',
-    es: 'Con más de 10 años de experiencia en consultoría financiera, estrategia empresarial y excelencia operativa, he ayudado a más de 150 empresas en diversas industrias a impulsar su crecimiento, optimizar costos y lograr rentabilidad sostenible.'
+    en: 'We transform financial leaks into growth opportunities. I identify exactly where you are losing money, optimize your operations, and design data-driven strategies that deliver measurable results and a controlled, profitable system.',
+    es: 'Transformamos fugas financieras en oportunidades de crecimiento. Identifico dónde estás perdiendo dinero, optimizo tus operaciones y diseño estrategias basadas en datos que entregan resultados medibles y un sistema rentable controlado.'
   },
   about_bio_2: {
     en: 'My approach is simple: deep analysis, strategic clarity, and relentless execution. Every engagement is tailored, every recommendation is data-backed, and every result is measurable.',
